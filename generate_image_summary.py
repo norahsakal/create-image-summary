@@ -36,6 +36,9 @@ def create_image_summary():
 
     day_x = 48  # Start point x-axis for weekday name
 
+    # Draw horizontal line
+    draw.line([(40, 180), (400 - 28, 180)], fill=(0, 0, 0), width=0)
+
     # Loop over day list [mon, tues, ..., sun]
     for i, day in enumerate(days):
 
